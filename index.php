@@ -11,12 +11,26 @@ $users = $user->getUsers();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
+    <style>
+    .darkMode{
+        filter: invert(1) hue-rotate(180deg);
+    }
+    </style>
 </head>
 <body>
     <header class="pt-5 text-center mb-5">
         <h1>Users CRUD</h1>
     </header>
     <main>
+    <section>
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-12 text-right">
+                    <button class="btn btn-primary" id="dark-mode">Dark Mode</button>
+                </div>
+            </div>
+        </div>
+    </section>
         <section>
             <div class="container">
                 <div class="row">

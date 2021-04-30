@@ -5,4 +5,8 @@ $(document).ready(function(){
     addUser();
     //
     editUser();
+
+    $("#dark-mode").click(function () {
+        $("html").toggleClass('darkMode');
+    });
 });
